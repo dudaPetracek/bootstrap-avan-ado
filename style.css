@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(to top, #000000, #1d0000);
+}
+.carousel-inner {
+    width: 80%px;
+    height: 600px;
+}
+
+.card-img-overlay {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.card img {
+    height: 400px;
+    border-radius: 2%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+    .carousel-inner {
+        height: 300px;
+    }
+    .card {
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+    .carousel-inner {
+        height: 200px;
+    }
+    .card {
+        grid-template-columns:repeat(1);
+    }
+
+}
